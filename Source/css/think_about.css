@@ -1,0 +1,41 @@
+.think_about {
+    width: 100%;
+    min-height: 410px;
+    padding: 0 185px 0 185px;
+}
+
+.think_about__content {
+    text-align: center;
+    justify-content: center;
+}
+
+.think_about__content_video {
+    max-width: 543px;
+    max-height: 320px;
+    cursor: pointer;
+    float: left;
+    display: flex;
+}
+
+.think_about__content_txt {
+    text-align: center;
+    float: right;
+}
+
+.think_about__content_title {
+    max-width: 325px;
+    word-wrap: break-word;
+    text-align: start;
+
+    font-family: 'bold_black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 51px;
+
+    color: black;
+}
+
+.think_about__content_title span{
+    color: #FFC700;
+}

@@ -1,0 +1,138 @@
+.AboutUs {
+    display: block;
+    margin-top: 120px;
+}
+
+.AboutUs__content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.AboutUs__content_title {
+    max-width: 475px;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+
+    font-family: 'bold_black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+
+    text-align: right;
+
+    color: Black;    
+}
+
+.AboutUs__content_title span {
+    color: #FFC700; 
+}
+
+
+.AboutUs__content_information {
+    width: 482px;
+    min-height: 267px;
+    background-color: black;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 626px) {
+    .AboutUs__content_information {
+        display: block;
+        width: 100%;
+        margin: 5px !important;
+    }
+
+    .AboutUs__content_information_1::after {
+        content: "";
+        top: 30px !important;
+        left: 20px !important; 
+        opacity: 50%;
+    }
+
+    .AboutUs__content_information_2::after {
+        content: "";
+        top: 30px !important;
+        left: 20px !important; 
+        opacity: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .AboutUs__content_information_1,
+    .AboutUs__content_information_2 {
+        padding: 10px !important;
+    }
+}
+
+
+.AboutUs__content_information_1 {
+    position: relative;
+    padding: 40px 94px 60px 50px;
+}
+
+
+
+.AboutUs__content_information_1::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -80px;
+
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    background-color: #FFC700;
+    background-image: url('../../images/about_img.png');
+    background-size: 70px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+
+}
+
+.AboutUs__content_information_2 {
+    padding: 40px 94px 60px 44px;
+    position: relative;
+}
+
+.AboutUs__content_information_2::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 430px;
+
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    background-color: #FFC700;
+    background-image: url('../../images/about_img_2.png');
+    background-size: 70px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+.AboutUs__content_information h1 {
+    font-family: 'bold_black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 51px;
+    color: #FFFFFF;
+    
+}
+
+.AboutUs__content_information p {
+    max-width: 344px;
+    word-wrap: break-word;
+    margin-top: 10px;
+
+    font-family: 'Sintony_Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
